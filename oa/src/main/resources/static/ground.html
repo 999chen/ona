@@ -10,6 +10,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="jquery.min.js"></script>
+    <script src="ground.js"></script>
     <style>
 
         * {
@@ -200,39 +201,5 @@
     凤a506小组作品
 </div>
 </div>
-<script>
-    var btn=$("#btn")
-    function getData(){
-        var problem=$("#problem").val();
-
-        var json={
-            "problem":problem,
-        };
-        var str=JSON.stringify(json);
-        // ajax异步传输
-        $.ajax({
-            // 请求地址
-            url:"http://localhost:8080/search",
-            // 数据传输方式
-            type:"get",
-            //从前台传后台的数据
-            data:{problem:$("#problem").val()},
-            // 从后台传到前台的数据类型
-            dataType:"json",
-            // crossDomain:true,
-            // 请求成功,function形参data用来接收从后台传过来的数据
-            success:function(data){
-              alert("成功！");
-            },
-            // 请求失败
-            error:function(){
-                alert("失败！")
-            }
-        });
-        // 输出采集到的数据
-        console.log(str);
-    }
-</script>
-
 </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="searchresult.css">
+    <script src="jquery.min.js"></script>
+    <script src="searchresult.js"></script>
+</head>
+<body>
+<!--搜索框-->
+<div id="box1">
+<form>
+    <input class="juxing" name="problem" id="problem" height="10px" placeholder="请输入题目" type="text"/>
+    <input type="button" id="btn" value="搜索" onclick="getData()"/>
+</form>
+</div>
+<!--结果1-->
+<div id="box2">
+    <!--用户信息-->
+    <div id="user1" >
+            用户1
+    </div>
+    <!--标题-->
+    <div id="title1">
+       标题1
+    </div>
+    <div id="problemmessage">
+
+        题目信息1
+
+    </div>
+    <!--题目信息1-->
+   <div id="end">
+
+       <!--底框 点赞-评论-收藏-发布时间-->
+       <!--点赞-->
+       <div id="good1">
+           点赞数
+       </div>
+       <div id="comment">
+           <div><p>评论数</p></div>
+       </div>
+       <div id="star">
+           <p>收藏数</p>
+       </div>
+       <div id="pushtime">
+           <p>发布时间</p>
+       </div>
+   </div>
+    <!--结果1-->
+    <div id="box3"></div>
+    <!--结果1-->
+    <div id="box4"></div>
+    <!--结果1-->
+    <div id="box5"></div>
+   </div>
+</body>
+</html>
