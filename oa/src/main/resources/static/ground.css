@@ -1,15 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
 /* 为每个链接设定样式 */
 .dropbtn {
     display: inline-block;
@@ -25,74 +16,29 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
 }
-.dropbtn2 {
-    display: inline-block;
+#username {
+    margin-left:90px ;
+    margin-top: 30px;
     color: black;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
 }
-.yuanxing {
-    width: 200px;
-    height: 200px;
-    background-color: pink;
-    border-radius: 50%;
-}
-
-.juxing {
+.search {
     width: 300px;
     height: 40px;
     background-color: white;
     border-radius: 50px;
 }
-
-.radius {
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 20px;
-    background-color: pink;
-}
-/* 鼠标放置链接时改变样式 */
-.dropbtn:hover
-{
-    background-color: #111;
-    color: red;
-}
-
-.dropdown {
-    display: inline-block;
-
-}
-
-/* 下拉菜单设置样式 */
-.dropdown-content {
-    /* 隐藏菜单 */
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    /* 设置链接元素的最小宽度 */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(12, 12, 12, 0.2);
-    overflow: auto;
-}
-.dropdown-content a {
-    display: block;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1
-
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 .dropdown{
-    height: 58px;
-    width: 160px;
-    border-style:double
+    background-image: url("头像.jpeg");
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+    height: 80px;
+    width: 80px;
+    border-style:solid;
+    border-radius: 50%;
 }
 #end{
     width: 100%;
@@ -110,7 +56,7 @@ ul {
     border:none;
 }
 #right{
-    width: 89%;
+    width: 49%;
     float:left;
     background-color:gainsboro;
     height:500px;
@@ -129,6 +75,24 @@ ul {
     height:500px;
     text-align:center;
 }
+#hot{
+    width:38%;
+    margin-left: 20px;
+    float:left;
+    background-color:gainsboro;
+    height:500px;
+    text-align:center;
+}
+#hottitle{
+    text-align: center;
+    font-size: 25px ;
+    color: rgb(55,176,171);
+}
+#hotcontent{
+    text-align: left;
+    padding-left:60px ;
+    padding-right: 60px;
+}
 .yeartitle{
     height: 15%;
     width: 100%
@@ -137,5 +101,29 @@ ul {
     height: 20%;
     width: 100%
 }
-
+#hotfalme{
+    margin-top: 20px;
+    height: 76%;
+    border: 1px solid red;
+}
+#mymenu>ul{
+    padding: 5px;
+    left: 90px;
+    top: 40px;
+    display: none;
+    list-style-type: none;
+    background-color: darkseagreen;
+    color: white;
+    min-height: 20px;
+    min-width: 20px;
+    text-align: left;
+    /*阴影效果：偏移量*/
+    box-shadow: 5px 5px 5px;
+    /*使下拉框置业页面最上方*/
+    position: absolute;
+    /*z-index: 999;*/
+}
+#mymenu:hover ul{
+    display: block;
+}
 

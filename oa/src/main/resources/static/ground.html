@@ -2,11 +2,7 @@
 <html>
 <head>
     <title>首页</title>
-    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-    <meta http-equiv="description" content="this is my page">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="ground.css">
@@ -18,20 +14,18 @@
 <body>
 <!-- 账户部分-->
 <table width="100%">
-    <td>
-        <img src="欢迎.jpeg" width="50" height="84.25" align="middle">
-        <a href="#">帮助中心</a>|<a href="#">联系我们</a>|<a href="#">支持作者</a>
-    </td>
-    <td align="right">
+    <td align="left">
         <u1>
-            <div class="dropdown"align="right">
-                <img  src="头像.jpeg"width="50" height="50"align="left" >
-                <a href="#" class="dropbtn2">我的 </a><a style="size: legal">∨</a>
-                <div class="dropdown-content"style="width: 160px" >
-                    <p><a href="#" target="major">账户信息</a></p>
-                    <p><a href="#" target="major">用户登录</a></p>
-                    <p><a href="#" target="major">新用户注册</a></p>
-                    <p><a href="#" target="major">退出登录</a></p>
+            <div class="dropdown"align="left">
+                <div id="mymenu">
+                    <div id="username"></div>
+
+                    <ul>
+                        <li><a href="usermessage.html" style="text-decoration: none; color:white">账户信息</a></li>
+                        <li>用户登录</li>
+                        <li> 新用户注册</li>
+                        <li>退出登录</li>
+                    </ul>
                 </div>
             </div>
         </u1>
@@ -42,7 +36,7 @@
     <tr>
         <td align="middle" >
             <form>
-                <input class="juxing" name="problem" id="problem" height="10px" placeholder="请输入题目" type="text"/>
+                <input class="search" name="problem" id="problem" height="10px" placeholder="请输入题目" type="text"/>
                 <input type="button" id="btn" value="搜索" onclick="getData()"/>
             </form>
         </td>
@@ -72,7 +66,20 @@
         <iframe id="iframe" name="major" src="year1.html">
         </iframe>
     </div>
-</div>
+    <div id="hot">
+    <a id="hottitle">热门榜单</a>
+    <br><br><br>
+        <div id="hotcontent">
+        <a href="hourhot.html" target="hot" class="hotlist" style="text-decoration: none; color:black">小时榜</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="weekhot.html" target="hot" class="hotlist" style="text-decoration: none; color:black">周榜</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="mouthhot.html" target="hot" class="hotlist" style="text-decoration: none; color:black">月榜</a>
+        </div>
+        <div id="hotfalme">
+            <iframe id="hotiframe" name="hot" src="hourhot.html">
+                <a>xxx</a>
+            </iframe>
+        </div>
+    </div>
 <!-- 第十部分 最后 -->
 </div>
 <!-- 底部 -->

@@ -24,11 +24,11 @@ window.onload=function () {
            $("#title1").append(data[0].title);
            $("#problemmessage").text("");
            $("#problemmessage").append(data[0].problem);
-           $("#good1").text("");
+           $("#good1").text("点赞数：");
            $("#good1").append(data[0].good);
-           $("#comment").text("");
+           $("#comment").text("评论数：");
            $("#comment").append(data[0].comment);
-           $("#star").text("");
+           $("#star").text("收藏数：");
            $("#star").append(data[0].star);
            $("#pushtime").text("");
            $("#pushtime").append(data[0].pushtime);
